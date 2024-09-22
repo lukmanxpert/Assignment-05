@@ -14,6 +14,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- tailwind customaized -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B4F461',
+                    }
+                }
+            }
+        }
+    </script>
     <!-- styles -->
     <style>
         .lexend {
@@ -24,7 +36,39 @@
 </head>
 
 <body>
-    <h1>Hello Bangladesh</h1>
+    <header class="bg-[#F9F7F3] pt-4 pb-8">
+        <div class="w-11/12 mx-auto my-4 text-center flex flex-col md:flex-row gap-6 justify-between items-center">
+            <!-- first -->
+            <div>
+                <button class="btn text-[#111111] font-semibold text-xl bg-primary">Blog</button>
+            </div>
+            <!-- second -->
+            <div class="flex gap-2 items-center justify-center">
+                <div>
+                    <img src="./assets/logo.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-[#111111] font-semibold text-xl">Donate Bangladesh</h3>
+                </div>
+            </div>
+            <!-- third -->
+            <div class="flex gap-2 items-center justify-center">
+                <div>
+                    <img src="./assets/coin.png" alt="">
+                </div>
+                <div class="font-medium text-xl text-[rgba(17,17,17,0.7)]">
+                    <span>5500</span>
+                    <span>BDT</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
     <script src="./js/app.js"></script>
 </body>
 
