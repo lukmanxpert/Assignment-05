@@ -37,11 +37,11 @@
 </head>
 
 <body>
-    <header class="bg-[#F9F7F3] pt-4 pb-8">
+    <header class="bg-[#F9F7F3] pt-4 pb-8 sticky top-0 left-0">
         <div class="w-11/12 mx-auto my-4 text-center flex flex-col md:flex-row gap-6 justify-between items-center">
             <!-- first -->
             <div>
-                <button class="btn text-[#111111] font-semibold text-xl bg-primary">Blog</button>
+                <a href="./blog.html" class="btn text-[#111111] font-semibold text-xl bg-primary" id="home">Blog</a>
             </div>
             <!-- second -->
             <div class="flex gap-2 items-center justify-center">
@@ -63,14 +63,14 @@
                 </div>
             </div>
         </div>
-    </header>
-    <main>
         <!-- donate and history section -->
-        <section class="flex justify-center gap-4 my-8">
+        <section class="flex justify-center gap-4 mt-6">
             <button class="btn bg-primary text-secondary text-xl font-semibold">Donate</button>
             <button class="btn text-xl font-medium text-[rgba(17,17,17,0.7)]">History</button>
         </section>
         <!-- card section -->
+    </header>
+    <main>
         <section class="w-10/12 mx-auto">
             <!-- card 01 -->
             <div class="grid md:grid-cols-2 items-center my-8 gap-4 border-2 rounded-2xl p-8">
@@ -78,7 +78,8 @@
                     <img src="./assets/noakhali.png" alt="">
                 </div>
                 <div>
-                    <p class="my-4 flex gap-2 items-center"><span><img src="./assets/coin.png" alt=""></span><span>0</span><span>BDT</span></p>
+                    <p class="my-4 flex gap-2 items-center"><span><img src="./assets/coin.png"
+                                alt=""></span><span>0</span><span>BDT</span></p>
                     <h3 class="font-bold text-xl text-secondary my-4">Donate for Flood at Noakhali, Bangladesh</h3>
                     <p class="font-light text-base text-[rgba(17, 17, 17, 0.7)] mb-4"> The recent floods in Noakhali
                         have caused significant damage to homes infrastructure. Your
@@ -95,7 +96,8 @@
                     <img src="./assets/feni.png" alt="">
                 </div>
                 <div>
-                    <p class="flex gap-2 items-center my-4"><span><img src="./assets/coin.png" alt=""></span><span>0</span><span>BDT</span></p>
+                    <p class="flex gap-2 items-center my-4"><span><img src="./assets/coin.png"
+                                alt=""></span><span>0</span><span>BDT</span></p>
                     <h3 class="font-bold text-xl text-secondary my-4">Donate for Flood Relief in Feni,Bangladesh</h3>
                     <p class="font-light text-base text-[rgba(17, 17, 17, 0.7)] mb-4">The recent floods in Feni have
                         devastated local communities, leading to severe disruption and loss. Your generous donation will
@@ -113,9 +115,16 @@
                     <img src="./assets/quota-protest.png" alt="">
                 </div>
                 <div>
-                    <p class="flex gap-2 items-center my-4"><span><img src="./assets/coin.png" alt=""></span><span>0</span><span>BDT</span></p>
+                    <p class="flex gap-2 items-center my-4"><span><img src="./assets/coin.png"
+                                alt=""></span><span>0</span><span>BDT</span></p>
                     <h3 class="font-bold text-xl text-secondary my-4">Aid for Injured in the Quota Movement</h3>
-                    <p class="font-light text-base text-[rgba(17, 17, 17, 0.7)] mb-4">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                    <p class="font-light text-base text-[rgba(17, 17, 17, 0.7)] mb-4">The recent Quota movement has
+                        resulted in numerous injuries and significant hardship for many individuals. Your support is
+                        crucial in providing medical assistance, rehabilitation, and necessary supplies to those
+                        affected. By contributing, you help ensure that injured individuals receive the care and support
+                        they need during this challenging time. Every donation plays a vital role in alleviating their
+                        suffering and aiding in their recovery. Please consider making a donation to support these brave
+                        individuals in their time of need.</p>
                     <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full my-4" />
                     <button class="btn block w-full my-4 bg-primary">Donate Now</button>
                 </div>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/070a4c8de3.js" crossorigin="anonymous"></script>
+    <!-- daisy ui and tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- tailwind customaized -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B4F461',
+                        secondary: '#111111',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- styles -->
+    <style>
+        .lexend {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="bg-[#F9F7F3] pt-4 pb-8 sticky top-0 left-0">
+        <div class="w-11/12 mx-auto my-4 text-center flex flex-col md:flex-row gap-6 justify-between items-center">
+            <!-- first -->
+            <div>
+                <a href="./index.html" id="blog" class="btn text-[#111111] font-semibold text-xl bg-primary">Home</a>
+            </div>
+            <!-- second -->
+            <div class="flex gap-2 items-center justify-center">
+                <div>
+                    <img src="./assets/logo.png" alt="">
+                </div>
+                <div>
+                    <h3 class="text-[#111111] font-semibold text-xl">Donate Bangladesh</h3>
+                </div>
+            </div>
+            <!-- third -->
+            <div class="flex gap-2 items-center justify-center">
+                <div>
+                    <img src="./assets/coin.png" alt="">
+                </div>
+                <div class="font-medium text-xl text-[rgba(17,17,17,0.7)]">
+                    <span>5500</span>
+                    <span>BDT</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="w-10/12 mx-auto">
+        <section>
+            <h1 class="text-left font-extrabold my-6 text-6xl">Important FAQ <span><i
+                        class="fa-solid fa-person-circle-question text-7xl"></i></span></h1>
+        </section>
+        <section>
+            <!-- 1no -->
+            <div class="collapse bg-base-200">
+                <input type="checkbox" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM) ?</div>
+                <div class="collapse-content">
+                    <p>
+                        The Document Object Model (DOM) is a programming interface for web documents, representing the
+                        page's structure as a tree of objects. It allows scripts to dynamically access, modify, and
+                        interact with HTML or XML content.</p>
+                </div>
+            </div>
+            <br>
+            <!-- 2no -->
+            <div class="collapse bg-base-200">
+                <input type="checkbox" />
+                <div class="collapse-title text-xl font-medium">How do you select an element form the DOM?</div>
+                <div class="collapse-content">
+                    <p>
+                        You can select an element from the DOM using these common methods: <br>
+
+                        01. document.getElementById('id') – Selects an element by its ID. <br>
+                        02. document.querySelector('.class or #id or tag') – Selects the first matching element by CSS
+                        selector. <br>
+                        03. document.querySelectorAll('.class or tag') – Selects all matching elements as a NodeList.
+                    </p>
+                </div>
+            </div>
+            <br>
+            <!-- 3no -->
+            <div class="collapse bg-base-200">
+                <input type="checkbox" />
+                <div class="collapse-title text-xl font-medium">What is the event delegation in the context of the dom
+                    and why is it useful?</div>
+                <div class="collapse-content">
+                    <p>
+                        Event delegation is a DOM technique where a parent element handles events from its child
+                        elements using a single event listener. It is useful because it improves performance by reducing
+                        the number of event listeners and allows handling events for dynamically added elements.</p>
+                </div>
+            </div>
+            <br>
+            <!-- 4no -->
+            <div class="collapse bg-base-200">
+                <input type="checkbox" />
+                <div class="collapse-title text-xl font-medium">how do you manipulate an elements attributes and styles
+                    using the dom?</div>
+                <div class="collapse-content">
+                    <p>You can manipulate an element's attributes and styles using the DOM with the following methods:
+                        <br>
+
+                        Attributes: <br>
+
+                        01. element.setAttribute('attribute', 'value') – Sets or updates an attribute.
+                        02. element.getAttribute('attribute') – Retrieves an attribute's value.
+                        element.removeAttribute('attribute') – Removes an attribute.
+                        <br>
+                        Styles: <br>
+
+                        01. element.style.property = 'value' – Directly modifies an inline CSS style.
+                    </p>
+                </div>
+            </div>
+            <br>
+        </section>
+    </main>
+    <footer class="mt-6">
+        <div class="h-40 bg-[#F9F7F3]"></div>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
