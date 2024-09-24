@@ -58,6 +58,13 @@ noakhaliDonateBtn.addEventListener("click", function () {
     let totalNoakhaliDonate = getElementValueByID("noakhali-total-donate");
     totalNoakhaliDonate = totalNoakhaliDonate + noakhaliDonateAmount;
     totalNoakhaliDonateElement.innerText = totalNoakhaliDonate;
+    // added history
+    const section = document.createElement("section");
+    const currentDate = new Date();
+    section.innerHTML = `<h1 class="font-extrabold text-2xl py-2">${noakhaliDonateAmount} TAKA is donated for famine-2024 at Noakhali, Bangladesh</h1>
+                        <p>${currentDate}</p>
+    `;
+    historySection.appendChild(section);
   }
 });
 
@@ -77,6 +84,14 @@ feniDonateBtn.addEventListener("click", function () {
     let totalFeniDonate = getElementValueByID("feni-total-donate");
     totalFeniDonate += feniDonateAmount;
     totalFeniDonateElement.innerHTML = totalFeniDonate;
+    // added history
+
+    const section = document.createElement("section");
+    const currentDate = new Date();
+    section.innerHTML = `<h1 class="font-extrabold text-2xl py-2">${feniDonateAmount} TAKA is donated for Flood Relief in Feni,Bangladesh</h1>
+                        <p>${currentDate}</p>
+    `;
+    historySection.appendChild(section);
   }
 });
 
@@ -96,5 +111,13 @@ quotaDonateBtn.addEventListener("click", function () {
     let totalQuotaDonate = getElementValueByID("quota-total-donate");
     totalQuotaDonate += quotaDonateAmount;
     totalQuotaDonateElement.innerHTML = totalQuotaDonate;
+    // added history
+
+    const section = document.createElement("section");
+    const currentDate = new Date();
+    section.innerHTML = `<h1 class="font-extrabold text-2xl py-2">${quotaDonateAmount} TAKA is donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
+                        <p>${currentDate}</p>
+    `;
+    historySection.appendChild(section);
   }
 });
