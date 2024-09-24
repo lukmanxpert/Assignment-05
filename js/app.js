@@ -11,7 +11,8 @@ const totalNoakhaliDonateElement = document.getElementById(
 );
 const feniDonateBtn = document.getElementById("feni-donate-btn");
 const totalFeniDonateElement = document.getElementById("feni-total-donate");
-
+const quotaDonateBtn = document.getElementById("quota-donate-btn");
+const totalQuotaDonateElement = document.getElementById("quota-total-donate");
 
 // common function
 const getInputValueByID = function getInputValueByID(ID) {
@@ -54,7 +55,7 @@ noakhaliDonateBtn.addEventListener("click", function () {
   } else {
     mainBalance = mainBalance - noakhaliDonateAmount;
     mainBalanceSection.innerText = mainBalance;
-    let totalNoakhaliDonate = getElementValueByID('noakhali-total-donate');
+    let totalNoakhaliDonate = getElementValueByID("noakhali-total-donate");
     totalNoakhaliDonate = totalNoakhaliDonate + noakhaliDonateAmount;
     totalNoakhaliDonateElement.innerText = totalNoakhaliDonate;
   }
@@ -73,11 +74,27 @@ feniDonateBtn.addEventListener("click", function () {
   } else {
     mainBalance = mainBalance - feniDonateAmount;
     mainBalanceSection.innerText = mainBalance;
-    let totalFeniDonate = getElementValueByID('feni-total-donate');
+    let totalFeniDonate = getElementValueByID("feni-total-donate");
     totalFeniDonate += feniDonateAmount;
     totalFeniDonateElement.innerHTML = totalFeniDonate;
   }
 });
 
-
 // quota movement function
+
+quotaDonateBtn.addEventListener("click", function () {
+  const quotaDonateAmount = getInputValueByID("quota-donate-amount");
+  if (isNaN(quotaDonateAmount)) {
+    alert("Invalid input given");
+  } else if (quotaDonateAmount > mainBalance) {
+    alert("You do not have sufficient balance");
+  } else if (quotaDonateAmount < 1) {
+    alert("Minimum donate amount is 01 TK");
+  } else {
+    mainBalance = mainBalance - quotaDonateAmount;
+    mainBalanceSection.innerText = mainBalance;
+    let totalQuotaDonate = getElementValueByID("quota-total-donate");
+    totalQuotaDonate += quotaDonateAmount;
+    totalQuotaDonateElement.innerHTML = totalQuotaDonate;
+  }
+});
