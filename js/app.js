@@ -65,6 +65,7 @@ noakhaliDonateBtn.addEventListener("click", function () {
                         <p>${currentDate}</p>
     `;
     historySection.appendChild(section);
+    alert("Donation Successful");
   }
 });
 
@@ -92,6 +93,7 @@ feniDonateBtn.addEventListener("click", function () {
                         <p>${currentDate}</p>
     `;
     historySection.appendChild(section);
+    alert("Donation Successful");
   }
 });
 
@@ -119,5 +121,6 @@ quotaDonateBtn.addEventListener("click", function () {
                         <p>${currentDate}</p>
     `;
     historySection.appendChild(section);
+    alert("Donation Successful");
   }
 });
